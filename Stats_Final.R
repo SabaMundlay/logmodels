@@ -13,7 +13,7 @@ library(doBy)
 library(nlme)
 
 #Load data
-Indo <- read.csv("indo.csv", header = T) #you can find the actual data file in the repo 
+Indo <- read.csv("indo.csv", header = T) 
 head(Indo)
 table(Indo$credit)
 
