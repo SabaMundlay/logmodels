@@ -1,9 +1,9 @@
-setwd("/Users/sabamundlay/desktop")
+setwd("") #your working directory here 
 install.packages("xtable")
 install.packages("knitr")
 library(knitr)
 library(xtable)
-library(MASS) #using this to do "log lm"
+library(MASS)
 library(foreign)
 library(aod)
 library(ggplot2)
@@ -12,8 +12,8 @@ library(plyr)
 library(doBy)
 library(nlme)
 
-#Load data from Indonesia data-file and create objects for variables I want to use
-Indo <- read.csv("indo.csv", header = T)
+#Load data
+Indo <- read.csv("indo.csv", header = T) #you can find the actual data file in the repo 
 head(Indo)
 table(Indo$credit)
 
